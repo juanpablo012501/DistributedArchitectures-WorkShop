@@ -3,16 +3,23 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>edu.eci.arsw</groupId>
   <artifactId>distributed-architecture-workshop</artifactId>
-  <packaging>jar</packaging>
+  <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>distributed-architecture-workshop</name>
-  <url>http://maven.apache.org</url>
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+
+  <modules>
+      <module>exercise1-tcp-rooms</module>
+      <module>exercise2-http-rooms</module>
+      <module>exercise3-rmi-labs</module>
+      <module>exercise4-grpc-wellness</module>
+      <module>exercise5-microservices-wellness</module>
+      <module>exercise6-wellness-gateway</module>
+      <module>exercise7-eciciencia</module>
+  </modules>
+
+  <properties>
+      <maven.compiler.source>21</maven.compiler.source>
+      <maven.compiler.target>21</maven.compiler.target>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
 </project>
